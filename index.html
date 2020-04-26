@@ -19,7 +19,7 @@
 			</div>
 			<div class="right-side">
 				<div class="brand">
-					<div>PATRICK WORSOE</div>
+					<div>PATRICK JOHN WORSOE</div>
 				</div>
 			</div>
 		</div>
@@ -211,11 +211,13 @@
 	portfolioItems.forEach(portfolioItem => {
 		portfolioItem.addEventListener('mouseover', () => {
 			console.log(portfolioItem.childNodes[1].classList);
+			portfolioItem.childNodes[1].classList.remove('img-brighten');
 			portfolioItem.childNodes[1].classList.add('img-darken');
 		})
 		
 		portfolioItem.addEventListener('mouseout', () => {
 			portfolioItem.childNodes[1].classList.remove('img-darken');
+			portfolioItem.childNodes[1].classList.add('img-brighten');
 		})
 	})
 </script>

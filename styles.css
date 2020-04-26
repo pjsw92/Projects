@@ -2,6 +2,7 @@
 body {
 	font-family: 'Oswald', sans-serif;
 	margin: 0px;
+	background-color: black;
 	}
 
 .container {
@@ -27,6 +28,10 @@ body {
 	text-transform: uppercase;
 	}
 
+.brand {
+	color: white;
+	}
+
 .nav-link-wrapper {
 	height: 22px;
 	border-bottom: 1px solid transparent;
@@ -34,25 +39,25 @@ body {
 	}
 
 .nav-link-wrapper a {
-	color: #8a8a8a;
+	color: gray;
 	text-decoration: none;
 	transition: color 0.5s;
 	}
 	
 .nav-link-wrapper:hover {
-	border-bottom: 1px solid black;
+	border-bottom: 1px white;
 	}
 	
 .nav-link-wrapper a:hover {
-	color: black;
+	color: white;
 	}
 	
 .active-nav-link {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid white;
 	}
 	
 .active-nav-link a {
-	color: black !important;
+	color: white !important;
 	}
 /*Portfolio styles*/
 
@@ -106,6 +111,11 @@ body {
 	transition: 1s;
 	filter: brightness(10%);
 	}
+	
+.img-brighten {
+	transition: 1s;
+	filter: brightness(100%);
+	}
 
 /*About Page*/
 .two-column-wrapper {
@@ -114,13 +124,20 @@ body {
 	}
 	
 .profile-image-wrapper img {
-	width: 100%;
+	width: 50%;
+	padding: 40px;
+	padding-left: 100px;
 	}
 	
 .profile-content-wrapper {
-	padding: 30px;
+	padding: 50px;
+	padding-right: 350px;
 	}
 	
 .profile-content-wrapper h1 {
 	color: lightseagreen;
+	}
+	
+.profile-content-wrapper p {
+	color: white;
 	}
